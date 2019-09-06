@@ -10,9 +10,9 @@ import android.widget.ArrayAdapter
 import android.widget.TextView
 
 
- class fragmentAciklama : Fragment() {
+class fragmentAciklama : Fragment() {
     lateinit var textViewAciklama:TextView
-     lateinit var aciklamalar:Array<String>
+    lateinit var aciklamalar:Array<String>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,7 +28,7 @@ import android.widget.TextView
     }
     public fun konuAciklama(position:Int){
 
-         aciklamalar=resources.getStringArray(R.array.Açıklamalar)
+        aciklamalar=resources.getStringArray(R.array.Açıklamalar)
         textViewAciklama.setText(aciklamalar[position])
     }
 
