@@ -43,6 +43,7 @@ class FragmentKonu : Fragment(),AdapterView.OnItemClickListener{
 
         var listener=activity as MyListener
         listener.sentData(p2)
+
     }
 
 
